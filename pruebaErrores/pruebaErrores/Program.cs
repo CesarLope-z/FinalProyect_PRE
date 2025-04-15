@@ -19,7 +19,7 @@ namespace Proyecto_Final
 
             int op;
 
-            double h, b, a, r, x, x2, x3, d, c, d1, d3;
+            double h, b, a, r, x2, x3, d, c, d1, d3;
             string e = "";
 
 
@@ -134,6 +134,7 @@ namespace Proyecto_Final
                         break;
 
                     case 2:
+                        double xc;
                         Console.WriteLine("Ecuación Cuadrática ax² + bx + c = 0, ingrese los siguientes valores ");
                         Console.WriteLine("ingrese a ");
                         a = double.Parse(Console.ReadLine());
@@ -148,10 +149,10 @@ namespace Proyecto_Final
                         {
                             d1 = Math.Sqrt(Math.Abs(d));
 
-                            x = -(b);
+                            xc = -(b);
                             x2 = 2 * a;
 
-                            x3 = x / x2;
+                            x3 = xc / x2;
                             d3 = d1 / x2;
 
                             Console.WriteLine("sus resultdos contiene un numero imaginario ");
@@ -165,10 +166,10 @@ namespace Proyecto_Final
                         {
 
 
-                            x = (-(b) + Math.Sqrt(d)) / (2 * a);
+                            xc = (-(b) + Math.Sqrt(d)) / (2 * a);
                             x2 = (-(b) - Math.Sqrt(d)) / (2 * a);
                             Console.WriteLine("su resultados son los siguientes");
-                            Console.WriteLine("x = " + x);
+                            Console.WriteLine("x = " + xc);
                             Console.WriteLine("x = " + x2);
                         }
 

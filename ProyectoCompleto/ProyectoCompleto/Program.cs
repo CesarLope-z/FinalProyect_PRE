@@ -10,7 +10,7 @@ namespace ProyectoCompleto
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(" aqui va a ir el proyecto completo sin errores");
+            Console.WriteLine("aqui va a ir el proyecto completo sin errores");
         }
     }
 }
