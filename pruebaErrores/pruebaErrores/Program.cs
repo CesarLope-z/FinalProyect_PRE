@@ -48,8 +48,6 @@ namespace Proyecto_Final
                 {
                     case 1:
 
-
-
                         Console.Write("\n Escogiste area de figuras Geometricas");
                         Console.Write("\nELIGE UNA OPCION EN MAYUSCULAS");
                         Console.Write("\n\n");
@@ -57,8 +55,6 @@ namespace Proyecto_Final
                         Console.WriteLine(" B) Circunferencia                 E) Trapecio");
                         Console.WriteLine(" C) Rectangulo                     F) Salir");
                         Console.Write("\n");
-
-
                         double A;
                         switch (Console.ReadLine())
                         {
@@ -66,7 +62,7 @@ namespace Proyecto_Final
 
                                 //cuadrado
                                 Console.WriteLine(" Escogiste la Opcion A");
-                                Console.WriteLine("\n Coloca el Area");
+                                Console.WriteLine("\n Coloca el Lado del cuadrado");
                                 a = double.Parse(Console.ReadLine());
                                 A = a * a;
                                 Console.Write(" El area del cuadrado es: " + A);
@@ -82,6 +78,7 @@ namespace Proyecto_Final
                                 Console.Write(" El resultado es :" + A);
 
                                 break;
+                            
                             case "C":
                                 //rectangulo
                                 Console.WriteLine("Escogiste la Opcion C");
@@ -108,39 +105,36 @@ namespace Proyecto_Final
                                 //Trapecio
                                 Console.Write("********************************");
                                 Console.WriteLine("Escogiste la Opcion E");
-                                Console.WriteLine("Dijite la altura");
+                                Console.WriteLine("Digite la altura");
                                 a = double.Parse(Console.ReadLine());
                                 Console.WriteLine("Coloca la base");
                                 b = double.Parse(Console.ReadLine());
-                                Console.WriteLine("Dijite la Hipotenusa");
+                                Console.WriteLine("Digite la Hipotenusa");
                                 h = double.Parse(Console.ReadLine());
                                 A = ((a + b) * h) / 2;
                                 Console.WriteLine("El area es: " + A);
                                 break;
+                            
                             case "F":
                                 Console.WriteLine(" GRACIAS POR USAR ESTE PROGRAMA");
-
-
                                 break;
+                            
                             default:
                                 Console.WriteLine("Escoge la opcion correcta");
                                 break;
-
-
-
                         }
 
 
                         break;
 
                     case 2:
-                        double xc;
+                        double xc; // variable Xcuadratica
                         Console.WriteLine("Ecuación Cuadrática ax² + bx + c = 0, ingrese los siguientes valores ");
                         Console.WriteLine("ingrese a ");
                         a = double.Parse(Console.ReadLine());
                         Console.WriteLine("ingrese b");
                         b = double.Parse(Console.ReadLine());
-                        Console.WriteLine("ingrese c");
+                        Console.WriteLine("ingrese el termino independiente c");
                         c = double.Parse(Console.ReadLine());
 
                         d = Math.Pow(b, 2) - 4 * a * c;
@@ -159,8 +153,6 @@ namespace Proyecto_Final
                             Console.WriteLine("x = " + x3 + "-" + Math.Round(d3, 2) + "i");
                             Console.WriteLine("x = " + x3 + "+" + Math.Round(d3, 2) + "i");
 
-
-
                         }
                         else if (d > 0)
                         {
@@ -177,17 +169,17 @@ namespace Proyecto_Final
                         break;
                     case 3:
                         Console.WriteLine(@"
-                C
-                |\
-                | \    H = Hipotenusa
-                |  \      
-    b = Cateto  |   \  a
-        Menor   |    \
-                |     \
-                |      \
-                |_______\
-                A   c    B
-                Cateto Mayor");
+                                        C
+                                        |\
+                                        | \    H = Hipotenusa
+                                        |  \      
+                            b = Cateto  |   \  a
+                                Menor   |    \
+                                        |     \
+                                        |      \
+                                        |_______\
+                                        A   c    B
+                                        Cateto Mayor");
                         Console.WriteLine("Angulo agudos");
                         Console.WriteLine("ingrese el valor del cateto menor ");
                         b = double.Parse(Console.ReadLine());
@@ -201,7 +193,6 @@ namespace Proyecto_Final
 
                         Console.WriteLine("el valor del angulo B es " + Math.Round(a, 2));
                         Console.WriteLine("el valor del angulo C es " + Math.Round(d, 2));
-                        break;
                     case 4:
 
                         Console.WriteLine("Ingrese la coordenada X:");
@@ -227,8 +218,6 @@ namespace Proyecto_Final
                             ubicacion = "Origen";
 
                         Console.WriteLine("El punto se encuentra en: " + ubicacion);
-
-
                         break;
 
                     case 7:
@@ -237,6 +226,7 @@ namespace Proyecto_Final
                         Console.Write("Ingrese la cantidad de artículos: ");
                         int cantidad = Convert.ToInt32(Console.ReadLine());
                         double total = precio * cantidad;
+                        Console.WriteLine("Numero de productos: " + cantidad);
                         Console.WriteLine("Total a pagar: $" + total);
                         break;
                     case 8:
