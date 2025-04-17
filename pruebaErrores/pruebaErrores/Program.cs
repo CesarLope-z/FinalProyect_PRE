@@ -149,7 +149,7 @@ namespace Proyecto_Final
                             x3 = xc / x2;
                             d3 = d1 / x2;
 
-                            Console.WriteLine("sus resultdos contiene un numero imaginario ");
+                            Console.WriteLine("sus resultados contienen un numero imaginario ");
                             Console.WriteLine("x = " + x3 + "-" + Math.Round(d3, 2) + "i");
                             Console.WriteLine("x = " + x3 + "+" + Math.Round(d3, 2) + "i");
 
