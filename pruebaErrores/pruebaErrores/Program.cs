@@ -31,7 +31,7 @@ namespace Proyecto_Final
 
                 Console.WriteLine("\t¿Que ejercicio deseas realizar? ");
                 Console.WriteLine("\t[1] Área de figuras geométricas");
-                Console.WriteLine("\t[2] Ecuación Cuadrática");
+                Console.WriteLine("\t[2]  Cuadrática");
                 Console.WriteLine("\t[3] Angulo agudos");
                 Console.WriteLine("\t[4] Plano Cartesiano");
                 Console.WriteLine("\t[7] Super Selectos");
