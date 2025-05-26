@@ -29,7 +29,7 @@ namespace ConsoleApp2
             EscribirE = new StreamWriter("Ecuación Cuadrática.txt", true);
             EscribirA = new StreamWriter("Angulo agudos.txt", true);
             EscribirP = new StreamWriter("Plano Cartesiano.txt", true);
-            EscribirC = new StreamWriter("Cuadrado.txt", true);
+            //EscribirC = new StreamWriter("Cuadrado.txt", true);
             EscribirCi = new StreamWriter("Circunferencia.txt", true);
             EscribirB = new StreamWriter("Cajero del BAC.txt", true);
             Console.WriteLine(@"
@@ -92,6 +92,7 @@ namespace ConsoleApp2
                             switch (Console.ReadLine())
                             {
                                 case "A":
+                                    EscribirC = new StreamWriter("Cuadrado.txt", true);
 
                                     //cuadrado
                                     Console.WriteLine(" Escogiste la Opcion A");
@@ -104,6 +105,7 @@ namespace ConsoleApp2
                                     EscribirC.WriteLine("\n Coloca el Lado en cm");
                                     EscribirC.WriteLine($"  {a}cm");
                                     EscribirC.WriteLine($" El area del cuadrado es: {A:F2}cm²");
+                                    EscribirC.Close();
                                     Console.WriteLine("\t\n¿Desea abrir el archivo de texto? (s/n): ");
                                     opc = Console.ReadLine();
                                     if (opc == "s" || opc == "S")
@@ -812,7 +814,7 @@ namespace ConsoleApp2
                 EscribirE.Close();
                 EscribirA.Close();
                 EscribirD.Close();
-                EscribirC.Close();
+                //EscribirC.Close();
                 EscribirCi.Close();
                 EscribirB.Close();
 
